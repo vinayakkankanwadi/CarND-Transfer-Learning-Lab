@@ -47,3 +47,27 @@ Epoch 50/50
 1000/1000 [==============================] - 0s 344us/step - loss: 0.0738 - acc: 1.0000 - val_loss: 0.8134 - val_acc: 0.7273
 
 ```
+
+```
+python feature_extraction.py --training_file vgg_traffic_100_bottleneck_features_train.p --validation_file vgg_traffic_bottleneck_features_validation.p
+
+Epoch 50/50
+4300/4300 [==============================] - 0s 76us/step - loss: 0.0889 - acc: 0.9942 - val_loss: 0.4452 - val_acc: 0.8693
+
+```
+
+```
+python feature_extraction.py --training_file inception_traffic_100_bottleneck_features_train.p --validation_file inception_traffic_bottleneck_features_validation.p
+
+Epoch 50/50
+4300/4300 [==============================] - 1s 131us/step - loss: 0.0273 - acc: 1.0000 - val_loss: 0.8361 - val_acc: 0.7535
+
+```
+python feature_extraction.py --training_file resnet_traffic_100_bottleneck_features_train.p --validation_file resnet_traffic_bottleneck_features_validation.p
+
+Epoch 50/50
+4300/4300 [==============================] - 1s 127us/step - loss: 0.0320 - acc: 1.0000 - val_loss: 0.6104 - val_acc: 0.8089
+
+```
+
+```
