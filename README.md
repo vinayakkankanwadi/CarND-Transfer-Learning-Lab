@@ -20,3 +20,30 @@ network can be one of 'vgg', 'inception', or 'resnet'
 dataset can be on of 'cifar10' or 'traffic'
 
 How will the pretrained model perform on the new datasets?
+
+Result
+---
+
+```
+python feature_extraction.py --training_file vgg_cifar10_100_bottleneck_features_train.p --validation_file vgg_cifar10_bottleneck_features_validation.p
+
+Epoch 50/50
+1000/1000 [==============================] - 0s 188us/step - loss: 0.2763 - acc: 0.9400 - val_loss: 0.9125 - val_acc: 0.7077
+```
+
+
+```
+python feature_extraction.py --training_file inception_cifar10_100_bottleneck_features_train.p --validation_file inception_cifar10_bottleneck_features_validation.p
+
+Epoch 50/50
+1000/1000 [==============================] - 0s 313us/step - loss: 0.0897 - acc: 1.0000 - val_loss: 1.0569 - val_acc: 0.6516
+
+```
+
+```
+python feature_extraction.py --training_file resnet_cifar10_100_bottleneck_features_train.p --validation_file resnet_cifar10_bottleneck_features_validaion.p
+
+Epoch 50/50
+1000/1000 [==============================] - 0s 344us/step - loss: 0.0738 - acc: 1.0000 - val_loss: 0.8134 - val_acc: 0.7273
+
+```
